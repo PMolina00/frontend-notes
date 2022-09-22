@@ -1,0 +1,69 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1440px;
+    width: 100vw;
+}
+
+.CardContainer {
+    background-color: #eccc68;
+    color: #2f3542;
+    padding-left: 10px;
+    max-width: 300px;
+    max-height: 200px;
+    width: 40vw;
+    height: 20vh;
+    overflow-y: scroll;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.CardContainer h3 {
+    max-width: 80%;
+}
+
+.ButtonCard {
+    position: sticky;
+    top: 5px;
+    right: 16px;
+    padding: 5px;
+    margin-left: 55%;
+}
+
+.ButtonCard button {
+    margin-left: 5px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.ButtonCard button:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 766px) {
+    .Container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CardContainer {
+        max-height: 400px;
+        width: 80%;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .CardContainer {
+        width: 90%;
+    }
+}
